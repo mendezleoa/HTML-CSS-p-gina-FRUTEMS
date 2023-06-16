@@ -1,24 +1,43 @@
-header {
-    display: flex;
-    align-items: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
 
-nav ul {
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 .8rem;
+* {
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-decoration: none;
 }
 
 main {
     display: flex;
 }
 
-aside {
+h1 {
+    font-size: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+.header {
+    background-color: #7BAD3C;
+    display: flex;
+    align-items: center;
+}
+
+.aside {
+    box-sizing: border-box;
+    background-color: #BBF176;
     width: 80%;
 }
 
-h1 {
-    font-size: 2rem;
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    margin: 0 .8rem;
+}
+
+.section {
+    margin: .5rem;
 }
