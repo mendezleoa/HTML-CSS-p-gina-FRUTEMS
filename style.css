@@ -6,11 +6,16 @@
     text-decoration: none;
 }
 
+a {
+    color: black;
+}
+
 main {
     display: flex;
 }
 
 h1 {
+    padding-left: 1rem;
     font-size: 2rem;
 }
 
@@ -18,16 +23,29 @@ li {
     list-style: none;
 }
 
+.logo {
+    padding: .5rem 1rem;
+    width: 70px;
+    height: 70px;
+}
+
 .header {
     background-color: #7BAD3C;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .aside {
-    box-sizing: border-box;
     background-color: #BBF176;
-    width: 80%;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 1.5rem .5rem;
+}
+
+.aside ul li {
+    margin: .5rem 0;
+    padding: .3rem;
 }
 
 .nav ul {
@@ -39,5 +57,70 @@ li {
 }
 
 .section {
+    margin: .7rem;
+    padding: 1.5rem .5rem;
+    background-color: #E8E8E8;
+    border-style: hidden;
+    border-radius: 1.5rem;
+    box-shadow: 7px 3px 3px #C2C2C2;
+}
+
+.article {
+    padding: 1rem;
+}
+
+.article h2 {
+    margin-bottom: .5rem;
+}
+
+.section-formulario {
+    margin: 5rem 1.5rem;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input{
     margin: .5rem;
+}
+
+.img-section {
+    margin-left: 1rem;
+    box-shadow: 7px 3px 3px #d1d1d1;
+}
+
+.img-article {
+    margin: 1rem 0;
+    box-shadow: 7px 3px 3px #d1d1d1;
+}
+
+.footer {
+    padding: .5rem;
+}
+
+.secciones {
+    width: 75%;
+}
+
+.boton-pri {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: .7rem 2rem;
+    background-color: #3d571d;
+    color: #f8f8f8;
+    border-color: transparent;
+    border-radius: 1rem;
+}
+
+@media (max-width: 980px) {
+    .img-section {
+        box-sizing: border-box;
+        width: 70%;
+        height: 70%;
+    }
+
+    .section-formulario {
+        margin: 3rem 1rem;
+        padding-left: 1rem;
+    }
 }
