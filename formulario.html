@@ -22,16 +22,19 @@
     <main>
         <div class="secciones">
             <section class="section section-formulario">
-                <h1>Las frutas son buenas</h1>
+                <h1>Regístrate en la tienda</h1>
                 <article class="article">
-                    <h2>Ventajas de comer frutas regularmente</h2>
-                    <form action="" method="post" class="formulario">
-                        <h4>¿Cuál es tu fruta favorita?</h4>
+                    <h2>Ingresa tus datos</h2>
+                    <form class="formulario">
                         <label>Nombre:</label>
-                        <input type="text" name="nombre"><br>
+                        <input type="text" name="nombre" id="nombre"><br>
                         <label>Apellido:</label>
-                        <input type="text" name="apellido"><br>
-                        <input type="submit" value="Guardar">
+                        <input type="text" name="apellido" id="apellido"><br>
+                        <label>Teléfono:</label>
+                        <input type="text" name="telefono" id="telefono"><br>
+                        <label>Correo:</label>
+                        <input type="email" name="correo" id="correo"><br>
+                        <input type="submit" value="Guardar" onclick="enviar()" class="boton-pri">
                     </form>
                 </article>
             </section>
@@ -47,5 +50,6 @@
     <footer class="footer">
         <i>&copy; FRUTEMS S.A. | todos los derechos reservados</i>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
